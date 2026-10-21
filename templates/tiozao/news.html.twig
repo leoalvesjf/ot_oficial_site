@@ -1,0 +1,17 @@
+<article class="news-card">
+	<div class="news-cover"></div>
+	<div class="news-body">
+		<div class="news-meta">
+			<span class="news-badge">Novidade</span>
+			<span>{{ date|date(setting('core.news_date_format')) }}</span>
+			{% if setting('core.news_author') and author is not empty %}
+			<span>· {{ author }}</span>
+			{% endif %}
+		</div>
+		<h3 class="news-title">{{ title }}</h3>
+		<div class="news-text">{{ content|raw }}</div>
+		{% if comments is not null %}
+		<a class="news-more" href="{{ comments }}">Comentar esta notícia</a>
+		{% endif %}
+	</div>
+</article>

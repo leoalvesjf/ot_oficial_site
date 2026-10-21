@@ -30,6 +30,7 @@ config2.local.php
 templates/*
 !templates/tibiacom
 !templates/kathrine
+!templates/tiozao
 
 # guild images
 images/guilds/*
