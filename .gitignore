@@ -80,3 +80,6 @@ landing
 
 # system
 system/functions_custom.php
+config.local.php
+install/ip.txt
+system/cache/
